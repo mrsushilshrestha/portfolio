@@ -167,7 +167,7 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/b.png" alt="">
+                <img src="images/b.png" loading="lazy" alt="image">
                 <div class="portfolio-layer">
                     <h4>Bank Management Project</h4>
                     <p>Java kullanarak geliştirdiğim banka yönetim programı. Bu projeyi Java Swing ile görsel bir arayüz oluşturarak geliştirdim.</p>
@@ -178,7 +178,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/we.png" alt="">
+                <img src="images/we.png" loading="lazy" alt="image"> 
                 <div class="portfolio-layer">
                     <h4>Portfolio Demo Project</h4>
                     <p>Kendi projelerimi sergileyip yeteneklerimi derleyebileceğim bir platform oluşturma amacıyla,
@@ -189,7 +189,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/art.png" alt="">
+                <img src="images/art.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Art Clone Project</h4>
                     <p>Bu proje, okul kapsamında verilen bir Art Clone görevidir. Bu proje, web tasarımı ve geliştirme
@@ -200,7 +200,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/arac2.png" alt="">
+                <img src="images/arac2.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Rent A Car</h4>
                     <p>Bu proje, JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir uygulamadır. Kullanıcıların
@@ -212,7 +212,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/springboot.png" alt="">
+                <img src="images/springboot.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Boot Web Service</h4>
                     <p>Bu Java Spring Boot tabanlı web servis projesi, ürün ekleme, çıkarma, listeleme ve bulma
@@ -225,7 +225,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/crypto.png" alt="">
+                <img src="images/crypto.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Crypto Ads</h4>
                     <p>Cryptoları listelemek için oluşturduğum bir web sitesi</p>
@@ -235,7 +235,7 @@
                 <span class="animate scroll" style="--i:6;"></span>
             </div>
             <div class="portfolio-box">
-                <img src="images/otel.png" alt="">
+                <img src="images/otel.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Otel Rezervasyon Sistemi</h4>
                     <p>C# Form Application ile geliştirdim Otel Rezervasyon sistemim.</p>
@@ -246,7 +246,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/kütüphane.png" alt="">
+                <img src="images/kütüphane.png" loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>Kütüphane Otomasyonu</h4>
                     <p>C# Form Application ile geliştirdiğim Kütüphane Otomasyon sistemim.</p>
@@ -256,7 +256,7 @@
                 <span class="animate scroll" style="--i:8;"></span>
             </div>
             <div class="portfolio-box">
-                <img src="images/qrcode.png" alt="">
+                <img src="images/qrcode.png"  loading="lazy" alt="">
                 <div class="portfolio-layer">
                     <h4>QR Code'lu Menu</h4>
                     <p>HTML-CSS-Javascript Kullanarak geliştirdiğim QRCode'lu Menu Uygulaması.</p>
@@ -271,45 +271,37 @@
     <!--contact section-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <form action="#">
+    
+        <form id="contactForm" action="#" method="post">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
-
-                <span class="animate scroll" style="--i:3;"></span>
             </div>
+    
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" id="phone" class="item" autocomplete="off">
+                    <input type="number" placeholder="Mobile Number" id="phone" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off">
+                    <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
-
-                <span class="animate scroll" style="--i:5;"></span>
             </div>
-
+    
             <div class="textarea-field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="your message" class="item"
-                    autocomplete="off"></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off" required></textarea>
                 <span class="focus"></span>
-
-                <span class="animate scroll" style="--i:7;"></span>
             </div>
-
+    
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
-
-                <span class="animate scroll" style="--i:9;"></span>
             </div>
         </form>
     </section>
@@ -318,20 +310,66 @@
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 by Sushil | All Rights Reserved.</p>
-
-            <span class="animate scroll" style="--i:1;"></span>
         </div>
-
         <div class="footer-iconTop">
             <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
-
+    
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <script>
+    // Handle form submission and send email using SMTP.js
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        // Collect form data
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+    
+        // Create the email content
+        const emailBody = `
+            Name: ${name}
+            Email: ${email}
+            Phone: ${phone}
+            Subject: ${subject}
+            Message: ${message}
+        `;
+    
+        // Send the email using SMTP.js
+        Email.send({
+            SecureToken: "YOUR_SECURE_TOKEN",
+            To: "mrsushilshresthaofficial@gmail.com",
+            From: email,
+            Subject: subject,
+            Body: emailBody,
+        }).then(function (response) {
+            // Show success message
+            if (response === "OK") {
+                Swal.fire("Success", "Your message has been sent!", "success");
+            } else {
+                Swal.fire("Error", "Failed to send message. Please try again.", "error");
+            }
+        });
+    
+        // Generate PDF with form data
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        doc.text(`Name: ${name}`, 10, 10);
+        doc.text(`Email: ${email}`, 10, 20);
+        doc.text(`Phone: ${phone}`, 10, 30);
+        doc.text(`Subject: ${subject}`, 10, 40);
+        doc.text(`Message: ${message}`, 10, 50);
+    
+        // Save the generated PDF
+        doc.save("contact_form_submission.pdf");
+    });
+    </script>
 </body>
 
 </html>
