@@ -317,19 +317,23 @@ span{
     border-right: .2rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
 }
-.about-content{
+.about-content {
     text-align: center;
 }
-.about-content h3{
+
+.about-content h3 {
     position: relative;
     display: inline-block;
     font-size: 2.6rem;
 }
-.about-content p{
+
+.about-content p {
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;  /* Added this line to justify the text */
 }
+
 .btn-box.btns{
     display: inline-block;
     width: 15rem;
