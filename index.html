@@ -1,375 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mrsushilshrestha</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/javascript.js" as="script" />
+    <link rel="preload" href="images/avatar4.jpg" as="image" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://smtpjs.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.emailjs.com" />
+
+    <link rel="stylesheet" href="css/style.css" />
 
     <!--Box icon-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("your_emailjs_public_key"); // Replace with your EmailJS public key
+      })();
+    </script>
+  </head>
+
+  <body>
     <!--Header-->
     <header class="header">
-        <a href="#" class="logo">Mr.Sushil<span class="animate" style="--i:1;"></span></a>
+      <a href="#" class="logo"
+        >Mr.Sushil<span class="animate" style="--i: 1"></span
+      ></a>
 
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" style="--i: 2"></span>
+      </div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
 
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
-        </nav>
+        <span class="active-nav"></span>
+        <span class="animate" style="--i: 2"></span>
+      </nav>
     </header>
 
     <!--home section-->
     <section class="home show-animate" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm<span> Sushil Shrestha</span><span class="animate" style="--i:2;"></span></h1>
-            <div class="text-animate">
-                <h3>Junior Developer</h3>
-                <span class="animate" style="--i:3;"></span>
-            </div>
-            <p>Python Enthusiast | BIT Student | Aspiring Technologist
-                <span class="animate" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box">
-                <a href="#" class="btn" id="downloadCv">Download Cv</a>
-                <a href="#about" class="btn">About Me</a>
-                <span class="animate" style="--i:5;"></span>
-            </div>
+      <div class="home-content">
+        <h1>
+          Hi, I'm<span> Sushil Shrestha</span
+          ><span class="animate" style="--i: 2"></span>
+        </h1>
+        <div class="text-animate">
+          <h3>Junior Developer</h3>
+          <span class="animate" style="--i: 3"></span>
         </div>
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/mrsushilshresthaofficial/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/mrsushilshrestha" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/mrsushilshrestha/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            
-            <span class="animate" style="--i:6;"></span>
+        <p>
+          Python Enthusiast | BIT Student | Aspiring Technologist
+          <span class="animate" style="--i: 4"></span>
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn" id="downloadCv">Download Cv</a>
+          <a href="#about" class="btn">About Me</a>
+          <span class="animate" style="--i: 5"></span>
         </div>
+      </div>
+      <div class="home-sci">
+        <a
+          href="https://www.linkedin.com/in/mrsushilshresthaofficial/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/mrsushilshrestha"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/mrsushilshrestha/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-instagram"></i
+        ></a>
 
-        <!-- <div class="home-imgHover"></div> -->
-        <img src="images/avatar4.jpg" loading="lazy"
-        alt="image">
+        <span class="animate" style="--i: 6"></span>
+      </div>
 
-        <span class="animate home-img" style="--i:5;"></span>
+      <span class="circle-spin"></span>
+      <img
+        src="images/avatar4.jpg"
+        loading="eager"
+        width="350"
+        height="350"
+        alt="Sushil Shrestha profile image"
+      />
+
+      <span class="animate home-img" style="--i: 5"></span>
     </section>
 
     <!--about section-->
     <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-        <div class="about-img">
-            <img src="images/avatar2.png" loading="lazy"
-            alt="image">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
+      <h2 class="heading">
+        About <span>Me</span><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+      <div class="about-img">
+        <img
+          src="images/avatar2.png"
+          loading="lazy"
+          width="250"
+          height="250"
+          alt="About Sushil Shrestha"
+        />
+        <span class="circle-spin"></span>
+        <span class="animate scroll" style="--i: 2"></span>
+      </div>
 
-        <div class="about-content">
-            <h3>Junior Developer<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>
-                I am a passionate Bachelor of Information Technology (BIT) student, dedicated to leveraging technology to solve real-world challenges. My expertise lies in Python, but I also have a strong foundation in C, C++, Java, and Assembly, enabling me to approach problems from multiple angles.  
-                I specialize in developing dynamic web applications using HTML, CSS, JavaScript, and PHP, with a focus on creating seamless and user-friendly experiences. My solid understanding of database management systems allows me to craft efficient, data-driven solutions.
-                Throughout my academic journey, I have worked on a variety of projects ranging from Python-based applications to embedded systems and web development. To further enhance my skills, I am currently participating in the 100-day Python Challenge, where I regularly share innovative Python projects on LinkedIn.
-                My goal is to contribute to technological advancements by creating innovative, efficient, and sustainable solutions that push the boundaries of the IT industry.  
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-        </div>
+      <div class="about-content">
+        <h3>
+          Junior Developer<span class="animate scroll" style="--i: 3"></span>
+        </h3>
+        <p>
+          I am a passionate Bachelor of Information Technology (BIT) student,
+          dedicated to leveraging technology to solve real-world challenges. My
+          expertise lies in Python, but I also have a strong foundation in C,
+          C++, Java, and Assembly, enabling me to approach problems from
+          multiple angles. I specialize in developing dynamic web applications
+          using HTML, CSS, JavaScript, and PHP, with a focus on creating
+          seamless and user-friendly experiences. My solid understanding of
+          database management systems allows me to craft efficient, data-driven
+          solutions. Throughout my academic journey, I have worked on a variety
+          of projects ranging from Python-based applications to embedded systems
+          and web development. To further enhance my skills, I am currently
+          participating in the 100-day Python Challenge, where I regularly share
+          innovative Python projects on LinkedIn. My goal is to contribute to
+          technological advancements by creating innovative, efficient, and
+          sustainable solutions that push the boundaries of the IT industry.
+          <span class="animate scroll" style="--i: 4"></span>
+        </p>
+      </div>
 
-
-            <div class="btn-box btns">
-                <a href="" class="btn" id="downloadCv2">Read More</a>
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-        </div>
+      <div class="btn-box btns">
+        <a href="" class="btn" id="downloadCv2">Read More</a>
+        <span class="animate scroll" style="--i: 5"></span>
+      </div>
     </section>
 
     <!--Education section-->
     <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+      <h2 class="heading">
+        My <span>Journey</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
 
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">
+            Education<span class="animate scroll" style="--i: 2"></span>
+          </h3>
 
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"> <i class='bx bxs-calendar'></i> 2017 - 2021</div>
-                            <h3>High School - Vocational High School</h3>
-                            <p>2017-2021 yılları arasında Ümraniye Mesleki ve Teknik Anadolu Lisesi Bilişim
-                                Teknolojileri bölümünde okudum. Dalım Veritabanı Programcılığıydı ve bu dönem, yazılıma
-                                olan ilgimin artmasına ve kariyerime yön vermeme yardımcı oldu.</p>
-
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"> <i class='bx bxs-calendar'></i> 2022 - 2024</div>
-                            <h3>Associate Degree - University</h3>
-                            <p>2022 ile 2024 yılları arasında İstanbul Medipol Üniversitesinde Bilgisayar Programcılığı
-                                okudum. Bu yıllarda kendimi yazılım alanında geliştirip çeşitli projeler yaptım ve
-                                GitHub hesabıma yükledim. Zorunlu stajımı Acro Teknoloji'de IT departmanında tamamladım
-                                ve 3.20 ortalamayla mezun oldum.</p>
-
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:3;"></span>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2017 - 2021
                 </div>
+                <h3>High School - Vocational High School</h3>
+                <p>
+                  2017-2021 yılları arasında Ümraniye Mesleki ve Teknik Anadolu
+                  Lisesi Bilişim Teknolojileri bölümünde okudum. Dalım
+                  Veritabanı Programcılığıydı ve bu dönem, yazılıma olan ilgimin
+                  artmasına ve kariyerime yön vermeme yardımcı oldu.
+                </p>
+              </div>
             </div>
-            <div class="education-column">
-                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"> <i class='bx bxs-calendar'></i> 2023 - 2024 (1 YIL)</div>
-                            <h3>Junior Developer - Falez Gayrimenkul</h3>
-                            <p>
-                            <p>Hem okulum devam ederken hem de çalıştığım bu gayrimenkul firmasına yazılım alanında
-                                destek verdim. Bu süreç, kendimi geliştirmeme ve profesyonel çevre edinmeme büyük katkı
-                                sağladı.</p>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"> <i class='bx bxs-calendar'></i> 2024 - 2024 (1 AY)</div>
-                            <h3>IT Intern - Acro Teknoloji</h3>
-                            <p>Zorunlu stajımı tamamlamak ve IT alanındaki yenilikleri, gelişmeleri görmek vede kendimi
-                                bu
-                                alanda geliştirmeme katkı sağladı. Sektörde önde gelen Acro Teknoloji'de staj yapmaktan
-                                çok mutluluk ve onur duydum. Staj sürecinde Bilgi Teknolojileri alanında kendimi
-                                geliştirdim ve
-                                birçok yeni şey öğrendim.</p>
-
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:6;"></span>
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2022 - 2024
                 </div>
+                <h3>Associate Degree - University</h3>
+                <p>
+                  2022 ile 2024 yılları arasında İstanbul Medipol
+                  Üniversitesinde Bilgisayar Programcılığı okudum. Bu yıllarda
+                  kendimi yazılım alanında geliştirip çeşitli projeler yaptım ve
+                  GitHub hesabıma yükledim. Zorunlu stajımı Acro Teknoloji'de IT
+                  departmanında tamamladım ve 3.20 ortalamayla mezun oldum.
+                </p>
+              </div>
             </div>
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
         </div>
+        <div class="education-column">
+          <h3 class="title">
+            Experience<span class="animate scroll" style="--i: 5"></span>
+          </h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2023 - 2024 (1 YIL)
+                </div>
+                <h3>Junior Developer - Falez Gayrimenkul</h3>
+                <p>
+                  Hem okulum devam ederken hem de çalıştığım bu gayrimenkul
+                  firmasına yazılım alanında destek verdim. Bu süreç, kendimi
+                  geliştirmeme ve profesyonel çevre edinmeme büyük katkı
+                  sağladı.
+                </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2024 - 2024 (1 AY)
+                </div>
+                <h3>IT Intern - Acro Teknoloji</h3>
+                <p>
+                  Zorunlu stajımı tamamlamak ve IT alanındaki yenilikleri,
+                  gelişmeleri görmek vede kendimi bu alanda geliştirmeme katkı
+                  sağladı. Sektörde önde gelen Acro Teknoloji'de staj yapmaktan
+                  çok mutluluk ve onur duydum. Staj sürecinde Bilgi
+                  Teknolojileri alanında kendimi geliştirdim ve birçok yeni şey
+                  öğrendim.
+                </p>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 6"></span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Portfolio-->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span><span class="animate scroll" style="--i:1;"></span></h2>
+      <h2 class="heading">
+        Latest <span>Project</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/b.png" loading="lazy" alt="image">
-                <div class="portfolio-layer">
-                    <h4>Bank Management Project</h4>
-                    <p>Java kullanarak geliştirdiğim banka yönetim programı. Bu projeyi Java Swing ile görsel bir arayüz oluşturarak geliştirdim.</p>
-                    <a href="https://github.com/Sushilkrks/bank-management-system-java-swing" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:2;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/we.png" loading="lazy" alt="image"> 
-                <div class="portfolio-layer">
-                    <h4>Portfolio Demo Project</h4>
-                    <p>Kendi projelerimi sergileyip yeteneklerimi derleyebileceğim bir platform oluşturma amacıyla,
-                        deneme olarak geliştirdiğim ve paylaştığım kişisel web sitemdir.</p>
-                    <a href="https://github.com/Sushilkrks/myWebSite.github.io" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:3;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/art.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Art Clone Project</h4>
-                    <p>Bu proje, okul kapsamında verilen bir Art Clone görevidir. Bu proje, web tasarımı ve geliştirme
-                        becerilerimi uygulamalı olarak geliştirmeme olanak sağladı.</p>
-                    <a href="https://Sushilkrks.github.io/WebProgramlama/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:4;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/arac2.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Rent A Car</h4>
-                    <p>Bu proje, JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir uygulamadır. Kullanıcıların
-                        istedikleri fotoğrafı ekleyip, marka ve fiyat bilgilerini girerek bir kart oluşturabilmelerini
-                        sağlar.</p>
-                    <a href="https://Sushilkrks.github.io/galeri.github.io/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/springboot.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Boot Web Service</h4>
-                    <p>Bu Java Spring Boot tabanlı web servis projesi, ürün ekleme, çıkarma, listeleme ve bulma
-                        işlevlerini içerir. GitHub Actions ile entegrasyon sağlanmış ve Postman ile HTTP fonksiyonları test edilmiştir.
-                    </p>
-                    <a href="https://github.com/Sushilkrks/SpringBootWebServis_Projem" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:6;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/crypto.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Crypto Ads</h4>
-                    <p>Cryptoları listelemek için oluşturduğum bir web sitesi</p>
-                    <a href="https://Sushilkrks.github.io/crypto-2/" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:6;"></span>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/otel.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Otel Rezervasyon Sistemi</h4>
-                    <p>C# Form Application ile geliştirdim Otel Rezervasyon sistemim.</p>
-                    <a href="https://github.com/Sushilkrks/otel-rezervasyon-otomasyonu" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:7;"></span>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/kütüphane.png" loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>Kütüphane Otomasyonu</h4>
-                    <p>C# Form Application ile geliştirdiğim Kütüphane Otomasyon sistemim.</p>
-                    <a href="https://github.com/Sushilkrks/KutuphaneProjesi" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:8;"></span>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/qrcode.png"  loading="lazy" alt="">
-                <div class="portfolio-layer">
-                    <h4>QR Code'lu Menu</h4>
-                    <p>HTML-CSS-Javascript Kullanarak geliştirdiğim QRCode'lu Menu Uygulaması.</p>
-                    <a href="https://Sushilkrks.github.io/qr-menu/" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-                <span class="animate scroll" style="--i:9;"></span>
-            </div>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img
+            src="images/b.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Bank Management Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Bank Management Project</h4>
+            <p>
+              Java kullanarak geliştirdiğim banka yönetim programı. Bu projeyi
+              Java Swing ile görsel bir arayüz oluşturarak geliştirdim.
+            </p>
+            <a
+              href="https://github.com/Sushilkrks/bank-management-system-java-swing"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 2"></span>
         </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/we.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Portfolio Demo Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Portfolio Demo Project</h4>
+            <p>
+              Kendi projelerimi sergileyip yeteneklerimi derleyebileceğim bir
+              platform oluşturma amacıyla, deneme olarak geliştirdiğim ve
+              paylaştığım kişisel web sitemdir.
+            </p>
+            <a
+              href="https://github.com/Sushilkrks/myWebSite.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 3"></span>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/art.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Art Clone Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Art Clone Project</h4>
+            <p>
+              Bu proje, okul kapsamında verilen bir Art Clone görevidir. Bu
+              proje, web tasarımı ve geliştirme becerilerimi uygulamalı olarak
+              geliştirmeme olanak sağladı.
+            </p>
+            <a
+              href="https://Sushilkrks.github.io/WebProgramlama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 4"></span>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/arac2.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Rent A Car Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Rent A Car</h4>
+            <p>
+              Bu proje, JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir
+              uygulamadır. Kullanıcıların istedikleri fotoğrafı ekleyip, marka
+              ve fiyat bilgilerini girerek bir kart oluşturabilmelerini sağlar.
+            </p>
+            <a
+              href="https://Sushilkrks.github.io/galeri.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 5"></span>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/springboot.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Boot Web Service Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Boot Web Service</h4>
+            <p>
+              Bu Java Spring Boot tabanlı web servis projesi, ürün ekleme,
+              çıkarma, listeleme ve bulma işlevlerini içerir. GitHub Actions ile
+              entegrasyon sağlanmış ve Postman ile HTTP fonksiyonları test
+              edilmiştir.
+            </p>
+            <a
+              href="https://github.com/Sushilkrks/SpringBootWebServis_Projem"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 6"></span>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/crypto.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Crypto Ads Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Crypto Ads</h4>
+            <p>Cryptoları listelemek için oluşturduğum bir web sitesi</p>
+            <a
+              href="https://Sushilkrks.github.io/crypto-2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 6"></span>
+        </div>
+        <div class="portfolio-box">
+          <img
+            src="images/otel.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Otel Rezervasyon Sistemi Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Otel Rezervasyon Sistemi</h4>
+            <p>
+              C# Form Application ile geliştirdim Otel Rezervasyon sistemim.
+            </p>
+            <a
+              href="https://github.com/Sushilkrks/otel-rezervasyon-otomasyonu"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 7"></span>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="images/kütüphane.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="Kütüphane Otomasyonu Project"
+          />
+          <div class="portfolio-layer">
+            <h4>Kütüphane Otomasyonu</h4>
+            <p>
+              C# Form Application ile geliştirdiğim Kütüphane Otomasyon
+              sistemim.
+            </p>
+            <a
+              href="https://github.com/Sushilkrks/KutuphaneProjesi"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 8"></span>
+        </div>
+        <div class="portfolio-box">
+          <img
+            src="images/qrcode.png"
+            loading="lazy"
+            width="300"
+            height="200"
+            alt="QR Code'lu Menu Project"
+          />
+          <div class="portfolio-layer">
+            <h4>QR Code'lu Menu</h4>
+            <p>
+              HTML-CSS-Javascript Kullanarak geliştirdiğim QRCode'lu Menu
+              Uygulaması.
+            </p>
+            <a
+              href="https://Sushilkrks.github.io/qr-menu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <span class="animate scroll" style="--i: 9"></span>
+        </div>
+      </div>
     </section>
 
     <!--contact section-->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-    
-        <form id="contactForm" action="#" method="post">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-    
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" id="phone" class="item" autocomplete="off" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-    
-            <div class="textarea-field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off" required></textarea>
-                <span class="focus"></span>
-            </div>
-    
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
+      <h2 class="heading">
+        Contact <span>Me!</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <form id="contactForm" action="#" method="post">
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              class="item"
+              autocomplete="off"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Email Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+            class="item"
+            autocomplete="off"
+            required
+          ></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Submit</button>
+          <span class="animate scroll" style="--i: 7"></span>
+        </div>
+        <div
+          id="success-message"
+          style="display: none; text-align: center; margin-top: 2rem"
+        >
+          <p style="font-size: 1.8rem; color: #00abf0">
+            Your message has been sent successfully!
+          </p>
+        </div>
+      </form>
     </section>
 
     <!--fOOTER-->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Sushil | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Sushil | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    
-    <script>
-    // Handle form submission and send email using SMTP.js
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-    
-        // Collect form data
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
-    
-        // Create the email content
-        const emailBody = `
-            Name: ${name}
-            Email: ${email}
-            Phone: ${phone}
-            Subject: ${subject}
-            Message: ${message}
-        `;
-    
-        // Send the email using SMTP.js
-        Email.send({
-            SecureToken: "YOUR_SECURE_TOKEN",
-            To: "mrsushilshresthaofficial@gmail.com",
-            From: email,
-            Subject: subject,
-            Body: emailBody,
-        }).then(function (response) {
-            // Show success message
-            if (response === "OK") {
-                Swal.fire("Success", "Your message has been sent!", "success");
-            } else {
-                Swal.fire("Error", "Failed to send message. Please try again.", "error");
-            }
-        });
-    
-        // Generate PDF with form data
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
-        doc.text(`Name: ${name}`, 10, 10);
-        doc.text(`Email: ${email}`, 10, 20);
-        doc.text(`Phone: ${phone}`, 10, 30);
-        doc.text(`Subject: ${subject}`, 10, 40);
-        doc.text(`Message: ${message}`, 10, 50);
-    
-        // Save the generated PDF
-        doc.save("contact_form_submission.pdf");
-    });
-    </script>
-</body>
 
+    <!-- Load scripts with defer -->
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      defer
+    ></script>
+    <script src="js/javascript.js" defer></script>
+  </body>
 </html>
