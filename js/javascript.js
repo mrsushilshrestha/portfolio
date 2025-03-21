@@ -7,11 +7,36 @@ const header = document.querySelector('header');
 const footer = document.querySelector('footer');
 const contactForm = document.getElementById("contactForm");
 
-// Toggle menu icon
+// Create overlay element for mobile menu
+let overlay = document.createElement('div');
+overlay.className = 'menu-overlay';
+document.body.appendChild(overlay);
+
+// Toggle menu icon and sidebar
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+    overlay.classList.toggle('active');
 }
+
+// Close menu when overlay is clicked
+overlay.addEventListener('click', () => {
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+    document.body.classList.remove('menu-open');
+    overlay.classList.remove('active');
+});
+
+// Close menu when link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+        document.body.classList.remove('menu-open');
+        overlay.classList.remove('active');
+    });
+});
 
 // Optimize scroll handler with throttling
 let ticking = false;
@@ -38,9 +63,8 @@ window.onscroll = () => {
             // Update sticky header
             header.classList.toggle('sticky', window.scrollY > 100);
 
-            // Remove toggle icon
-            menuIcon.classList.remove('bx-x');
-            navbar.classList.remove('active');
+            // Don't close navbar on scroll anymore
+            // This is now handled by the overlay and link clicks
 
             // Update footer animation
             footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.scrollingElement.scrollHeight);
@@ -74,8 +98,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
     // Send email using EmailJS
     emailjs.send(
-        "your_service_id", // Replace with your EmailJS service ID
-        "your_template_id", // Replace with your EmailJS template ID
+        "service_q9ny6v8", // Your EmailJS service ID
+        "template_qyj20tr", // Your EmailJS template ID
         {
             name: name, // From the form input
             email: email, // From the form input
@@ -83,7 +107,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
             message: message, // From the form input
             time: new Date().toLocaleString(), // Current time
         },
-        "your_public_key" // Replace with your EmailJS public key
+        "3ZvixN4xsmYP09b3X" // Your EmailJS public key
     )
     .then(function(response) {
         // Show success message
@@ -111,8 +135,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 // Optimize CV download handlers
 const downloadCv = (event) => {
     event.preventDefault();
-    if (confirm('CV dosyasını indirmek ister misiniz?')) {
-        window.location.href = 'ataBerkayKarakusCV.pdf';
+    if (confirm('Are You Download CV?')) {
+        window.location.href = 'CV/CV.pdf';
     }
 };
 
