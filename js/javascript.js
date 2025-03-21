@@ -44,24 +44,24 @@ window.onscroll = () => {
     if (!ticking) {
         window.requestAnimationFrame(() => {
             // Update navbar links
-            sections.forEach(sec => {
+    sections.forEach(sec => {
                 const top = window.scrollY;
                 const offset = sec.offsetTop - 550;
                 const height = sec.offsetHeight;
                 const id = sec.getAttribute('id');
 
-                if (top >= offset && top < offset + height) {
-                    navLinks.forEach(links => {
-                        links.classList.remove('active');
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
                         document.querySelector(`header nav a[href*='${id}']`).classList.add('active');
-                    });
-
-                    sec.classList.add('show-animate');
-                } 
             });
 
+            sec.classList.add('show-animate');
+        } 
+    });
+
             // Update sticky header
-            header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
             // Don't close navbar on scroll anymore
             // This is now handled by the overlay and link clicks
@@ -78,7 +78,7 @@ window.onscroll = () => {
 // Contact form submission
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     // Get form data
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -134,7 +134,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 // Optimize CV download handlers
 const downloadCv = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     if (confirm('Are You Download CV?')) {
         window.location.href = 'CV/CV.pdf';
     }
