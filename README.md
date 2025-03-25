@@ -20,7 +20,7 @@ This is my personal **Portfolio Website**, showcasing my journey as a **Junior D
 
 ## 📂 Project Structure
 ```
-📦 Portfolio-Website
+📦 portfolio
 ├── 📂 css
 │   ├── style.css
 ├── 📂 js
