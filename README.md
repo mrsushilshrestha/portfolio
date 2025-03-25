@@ -35,7 +35,7 @@ This is my personal **Portfolio Website**, showcasing my journey as a **Junior D
 ## 📸 Screenshots
 ![Home Page](images/1-Home-Page.png)
 ![About Page](images/2-About-Page.png)
-![Education Page](images/3-Education-Page.png)
+![Education Page](images/3-Education-page.png)
 ![Project Page](images/4-Portfolio-Page.png)
 
 
