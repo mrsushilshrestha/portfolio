@@ -45,7 +45,7 @@ This is my personal **Portfolio Website**, showcasing my journey as a **Junior D
    ```
 2. Navigate to the project folder:
    ```sh
-   cd Portfolio-Website
+   cd portfolio
    ```
 3. Open `index.html` in your browser.
 
