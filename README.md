@@ -1,6 +1,6 @@
 # Portfolio Website - Sushil Shrestha
 
-![Portfolio Demo](Demo-Sushil-Shrestha-Portfoilo.gif)
+![Portfolio Demo](images/Demo-Sushil-Shrestha-Portfoilo.gif)
 
 ## 🚀 About the Project
 This is my personal **Portfolio Website**, showcasing my journey as a **Junior Developer** and **Python Enthusiast**. It includes sections about my education, skills, projects, and ways to connect with me. 
@@ -33,7 +33,11 @@ This is my personal **Portfolio Website**, showcasing my journey as a **Junior D
 ```
 
 ## 📸 Screenshots
-![Home Page](images/Home-Page.png)
+![Home Page](images/1-Home-Page.png)
+![About Page](images/2-About-Page.png)
+![Education Page](images/3-Education-Page.png)
+![Project Page](images/4-Portfolio-Page.png)
+
 
 ## 🔥 Live Demo
 [Check it out here](https://mrsushilshrestha.github.io/portfolio/)
