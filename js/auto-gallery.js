@@ -20,7 +20,7 @@ const ACTUAL_IMAGES = {
     events: [
         'Marathon.jpeg',
         'Marathon__1.jpeg',
-        'HULT-Prize.jpg',
+        'HULT-Prize.JPG',
         'HULT-Prize__1.JPG',
         'HULT-Prize__2.JPG',
         'HULT-Prize__3.JPG',
