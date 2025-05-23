@@ -52,6 +52,15 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <div class="dropdown-parent">
+          <a href="#images">Images</a>
+          <div class="dropdown-content">
+            <a href="#personal">Personal</a>
+            <a href="#work">Work</a>
+            <a href="#events">Events</a>
+            <!-- <a href="#certificate">Certificates</a> -->
+          </div>
+        </div>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
 
@@ -240,6 +249,104 @@
             </div>
             <span class="animate scroll" style="--i: 6"></span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate section -->
+    <section class="certificate" id="certificate">
+      <h2 class="heading">
+        My <span>Certificates</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="certificate-container">
+        <div class="certificate-box">
+          <img
+            src="images/certificates/python_basic.jpg"
+            loading="lazy"
+            alt="Python Basic Certificate"
+          />
+          <div class="certificate-content">
+            <h3>Python Basic</h3>
+            <p>HackerRank | Jan 2025</p>
+            <a href="#" class="btn">View Certificate</a>
+          </div>
+          <span class="animate scroll" style="--i: 2"></span>
+        </div>
+
+        <div class="certificate-box">
+          <img
+            src="images/certificates/django_framework.jpg"
+            loading="lazy"
+            alt="Django Framework Certificate"
+          />
+          <div class="certificate-content">
+            <h3>Python Django</h3>
+            <p>Skill Shikshya (p) Ltd. | Dec 2024</p>
+            <a href="#" class="btn">View Certificate</a>
+          </div>
+          <span class="animate scroll" style="--i: 3"></span>
+        </div>
+
+        <div class="certificate-box">
+          <img
+            src="images/certificates/python_training.jpg"
+            loading="lazy"
+            alt="Python Training Certificate"
+          />
+          <div class="certificate-content">
+            <h3>Python Training</h3>
+            <p>New IT Venture (N.I.T.V Nepal Limited) | Feb 2025</p>
+            <a href="#" class="btn">View Certificate</a>
+          </div>
+          <span class="animate scroll" style="--i: 4"></span>
+        </div>
+      </div>
+    </section>
+
+    <!--Images section-->
+    <section class="images" id="images">
+      <h2 class="heading">
+        My <span>Gallery</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="gallery-tabs">
+        <div class="tab active" data-target="all">All</div>
+        <div class="tab" data-target="personal">Personal</div>
+        <div class="tab" data-target="work">Work</div>
+        <div class="tab" data-target="events">Events</div>
+        <!-- <div class="tab" data-target="certificate">Certificates</div> -->
+      </div>
+
+      <div class="gallery-content active" id="all">
+        <div class="image-container">
+          <!-- All images will be loaded dynamically -->
+        </div>
+      </div>
+
+      <div class="gallery-content" id="personal">
+        <div class="image-container">
+          <!-- Personal images will be loaded dynamically -->
+        </div>
+      </div>
+
+      <div class="gallery-content" id="work">
+        <div class="image-container">
+          <!-- Work images will be loaded dynamically -->
+        </div>
+      </div>
+
+      <div class="gallery-content" id="events">
+        <div class="image-container">
+          <!-- Event images will be loaded dynamically -->
+        </div>
+      </div>
+
+      <div class="gallery-content" id="certificate">
+        <div class="image-container">
+          <!-- certificate images will be loaded dynamically -->
         </div>
       </div>
     </section>
@@ -484,5 +591,6 @@
       defer
     ></script>
     <script src="js/javascript.js" defer></script>
+    <script src="js/auto-gallery.js" defer></script>
   </body>
 </html>
