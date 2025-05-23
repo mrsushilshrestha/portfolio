@@ -228,46 +228,104 @@ function setupTabFiltering() {
 //     return box;
 // }
 
-
-
+/* lazy loading*/
+function lazyLoadImage(img) {
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;  // load actual image
+            lazyImage.removeAttribute('data-src');
+            obs.unobserve(lazyImage);
+          }
+        });
+      });
+      observer.observe(img);
+    } else {
+      // Fallback for browsers without IntersectionObserver
+      img.src = img.dataset.src;
+    }
+  }
+  
+  
 /**
  * Create an image box element
  * @param {Object} image - The image object with path and caption
  * @returns {HTMLElement} - The created image box element
  */
-function createImageBox(image) {
+  function createImageBox(image) {
     const box = document.createElement('div');
     box.className = 'image-box';
-    
-    // Create the image element
+  
     const img = document.createElement('img');
-    img.src = image.path;
     img.alt = image.caption;
-    img.loading = 'lazy';
-    
-    // Handle image loading errors
-    img.onerror = function() {
-        console.log('Image failed to load:', image.path);
-        this.onerror = null;
-        this.src = `https://placehold.co/400x300/112e42/00abf0/png?text=${encodeURIComponent(image.caption)}`;
+    img.loading = 'lazy';  // keep native lazy loading too
+    img.dataset.src = image.path;  // real image URL stored in data-src
+    img.src = 'placeholder.jpg';    // lightweight placeholder image URL
+  
+    img.onerror = function () {
+      this.onerror = null;
+      this.src = `https://placehold.co/400x300/112e42/00abf0/png?text=${encodeURIComponent(image.caption)}`;
     };
-    
-    // Create the overlay
+  
+    // Start lazy loading via Intersection Observer
+    lazyLoadImage(img);
+  
     const overlay = document.createElement('div');
     overlay.className = 'image-overlay';
-    overlay.innerHTML = `<h3>${image.caption}</h3>`;
-    
-    // Add elements to the box
+    overlay.textContent = image.caption;
+  
     box.appendChild(img);
     box.appendChild(overlay);
-    
-    // Add click event to view full image
+  
     box.addEventListener('click', () => {
-        viewFullImage(image.path);
+      // Your click handler code here
+      console.log(`Clicked image with caption: ${image.caption}`);
     });
-    
+  
     return box;
-}
+  }
+  
+
+// /**
+//  * Create an image box element
+//  * @param {Object} image - The image object with path and caption
+//  * @returns {HTMLElement} - The created image box element
+//  */
+// function createImageBox(image) {
+//     const box = document.createElement('div');
+//     box.className = 'image-box';
+    
+//     // Create the image element
+//     const img = document.createElement('img');
+//     img.src = image.path;
+//     img.alt = image.caption;
+//     img.loading = 'lazy';
+    
+//     // Handle image loading errors
+//     img.onerror = function() {
+//         console.log('Image failed to load:', image.path);
+//         this.onerror = null;
+//         this.src = `https://placehold.co/400x300/112e42/00abf0/png?text=${encodeURIComponent(image.caption)}`;
+//     };
+    
+//     // Create the overlay
+//     const overlay = document.createElement('div');
+//     overlay.className = 'image-overlay';
+//     overlay.innerHTML = `<h3>${image.caption}</h3>`;
+    
+//     // Add elements to the box
+//     box.appendChild(img);
+//     box.appendChild(overlay);
+    
+//     // Add click event to view full image
+//     box.addEventListener('click', () => {
+//         viewFullImage(image.path);
+//     });
+    
+//     return box;
+// }
 
 /**
  * View full-size image in a modal
